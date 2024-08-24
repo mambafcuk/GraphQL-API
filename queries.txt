@@ -1,0 +1,25 @@
+----------------------------
+query getUsers{
+  users	{
+    id
+    firstName
+    lastName
+    age
+  }
+  }
+
+
+
+-----------------------------
+query getUsers_Quotes {
+  users {
+    id
+    firstName
+    lastName
+    age
+  }
+  quotes{
+    name
+    by
+  }
+}
