@@ -27,7 +27,7 @@ const resolvers ={
     },
 
     Mutation:{
-        createNewUser:(_,{firstName, lastName, age})=>{
+        createNewUser:(_,{firstName,lastName,age})=>{
             const id =  randomBytes(16).toString('hex')
             users.push({
                 id,

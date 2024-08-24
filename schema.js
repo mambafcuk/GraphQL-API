@@ -24,6 +24,7 @@ by: ID
 type Mutation{
 createNewUser(firstName: String!, lastName: String!, age: Int!): User
 }
+
 `
 
 export default typeDefs
