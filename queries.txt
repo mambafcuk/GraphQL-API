@@ -1,6 +1,3 @@
-
-
-
 ----------------------------
 query getUsers{
   users	{
@@ -47,4 +44,30 @@ query getQuoteByID{
   iquote(by: 1){
    name
 }
+}
+
+
+
+------------------------------
+query getQuoteByID($userid:ID){
+  iquote(by: $userid){
+   name
+}
+}
+
+Query Variables:
+
+{
+  "userid": 1
+}
+
+
+------------------------------
+mutation{
+  createNewUser(firstName:"Evil", lastName:"isMyMiddleName", age: 21){
+    id
+    firstName
+    lastName
+    age
+  }
 }
