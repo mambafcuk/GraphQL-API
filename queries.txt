@@ -1,3 +1,6 @@
+
+
+
 ----------------------------
 query getUsers{
   users	{
@@ -22,4 +25,26 @@ query getUsers_Quotes {
     name
     by
   }
+}
+
+
+
+-----------------------------
+query getUsersByID{
+  user(id:"1"){
+    id
+    firstName
+    lastName
+    age
+  }
+}
+
+
+
+
+-----------------------------
+query getQuoteByID{
+  iquote(by: 1){
+   name
+}
 }

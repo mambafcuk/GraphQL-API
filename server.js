@@ -40,7 +40,7 @@ const resolvers ={
             return quotes
             },
         iquote:(_,{by})=>{
-            return quote.filter(quote=>quote.by == by)
+            return quotes.filter(quote=>quote.by == by)
         }    
 },
     User:{
